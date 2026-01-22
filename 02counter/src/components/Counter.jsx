@@ -12,13 +12,17 @@ function Counter() {
   };
   return (
     <div>
-      <h1 class="text-2xl font-bold underline mb-10 border p-4 rounded-xl">
+      <h1 className="text-2xl font-bold underline mb-10 border p-4 rounded-xl">
         React Counter Tailwind
       </h1>
       <h2>Counter Value : {counter} </h2>
-      <div class="flex justify-center gap-4 my-4">
-        <button onClick={addValue}>Add Value</button>
-        <button onClick={removeValue}>Remove Value</button>
+      <div className="flex justify-center gap-4 my-4">
+        <button className="p-2 rounded border" onClick={addValue}>
+          Add Value
+        </button>
+        <button className="p-2 rounded border" onClick={removeValue}>
+          Remove Value
+        </button>
       </div>
       <p>Footer : </p>
     </div>
