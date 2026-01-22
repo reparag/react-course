@@ -1,23 +1,14 @@
-import { useState } from 'react';
-import './App.css';
+import Card from './components/Card';
+import Counter from './components/Counter';
+import TailwindCard from './components/TailwindCard';
 
 function App() {
-  const [counter, setCounter] = useState(0);
-  const addValue = () => {
-    setCounter(counter + 1);
-    setCounter((prevCounter) => prevCounter + 1);
-  };
-
-  const removeValue = () => {
-    setCounter(counter - 1);
-  };
   return (
     <>
-      <h1>React Counter</h1>
-      <h2>Counter Value : {counter} </h2>
-      <button onClick={addValue}>Add Value</button>
-      <button onClick={removeValue}>Remove Value</button>
-      <p>Footer : </p>
+      {/* <Counter /> */}
+      {/* <Card /> */}
+      <TailwindCard />
+      <TailwindCard username="Kishor" />
     </>
   );
 }
